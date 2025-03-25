@@ -10,7 +10,7 @@ router.post('/', async (req, res) => {
 
         // Check if the entry already exists
         const existingEntry = await Waitlist.findOne({
-            $and: [{ email }, { walletAddress }]
+            $or: [{ email }, { walletAddress }]
         });
 
         if (existingEntry) {
