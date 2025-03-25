@@ -14,11 +14,10 @@ app.use(express.json());
 // Routes
 app.use('/api/waitlist', waitlistRoutes);
 
-// Export the serverless function
-export default app;
-
+// Database Connection
 mongoose.connect(process.env.MONGO_URI)
-    .then(() => {
-        console.log('Connected to MongoDB');
-    })
+    .then(() => console.log('Connected to MongoDB'))
     .catch((err) => console.error('DB connection error:', err));
+
+// Export as a Serverless Function (for Vercel)
+export default (req, res) => app(req, res);
