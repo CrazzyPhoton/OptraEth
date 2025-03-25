@@ -5,6 +5,7 @@ import axios from 'axios';
 export function Content() {
     const { address, isConnected } = useAccount();
     const [email, setEmail] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -13,6 +14,8 @@ export function Content() {
             alert('Please connect your wallet and enter your email address.');
             return;
         }
+
+        setIsSubmitting(true);
 
         const formData = {
             email,
@@ -25,6 +28,8 @@ export function Content() {
         } catch (err) {
             console.error('Error submitting waitlist:', err);
             alert('Entry exists in the waitlist!');
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -57,9 +62,9 @@ export function Content() {
                             <button
                                 type="submit"
                                 className="btn btn-primary w-100"
-                                disabled={!isConnected || !email}
+                                disabled={!isConnected || !email || isSubmitting}
                             >
-                                Join Waitlist
+                                {isSubmitting ? 'Submitting...' : 'Join Waitlist'}
                             </button>
                         </form>
                     </div>
