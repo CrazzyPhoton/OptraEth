@@ -20,7 +20,7 @@ export function Content() {
         };
 
         try {
-            await axios.post(`${import.meta.env.VITE_EXPRESS_BACKEND_URL}api/waitlist`, formData);
+            await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}api/waitlist`, formData);
             alert('Entry added to the waitlist successfully!');
         } catch (err) {
             console.error('Error submitting waitlist:', err);
