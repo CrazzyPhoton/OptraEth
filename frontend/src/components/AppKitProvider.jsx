@@ -2,7 +2,7 @@
 import { createAppKit } from '@reown/appkit/react'
 
 import { WagmiProvider } from 'wagmi'
-import { arbitrum, bsc, mainnet, polygon } from '@reown/appkit/networks'
+import { mainnet } from '@reown/appkit/networks'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
 
@@ -21,7 +21,7 @@ const metadata = {
 }
 
 // 3. Set the networks
-const networks = [mainnet, arbitrum, polygon, bsc]
+const networks = [mainnet]
 
 // 4. Create Wagmi Adapter
 const wagmiAdapter = new WagmiAdapter({
