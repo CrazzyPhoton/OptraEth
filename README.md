@@ -1,13 +1,17 @@
-# OptraEth Mern
+# OptraEth
 
 ## Overview
 
-OptraEth Mern is a full-stack blockchain application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack and Reown(WalletConnect) functionality to connect with the Ethereum blockchain.
-Currently this app allows you to join the waitlist of OptraEth which is a Opinion Trading based application. This guide provides instructions on how to set up and run the application locally.
+OptraEth is a full-stack blockchain application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack and Reown(WalletConnect) functionality to connect with the Ethereum blockchain.
+Currently this app allows you to join the waitlist of OptraEth which is a Opinion Trading based application.
+
+Visit the app hosted on Vercel: https://optra-eth-mern-frontend.vercel.app/
+
+The below guide provides instructions on how to set up and run the application locally.
 
 ## Prerequisites
 
-**Before you begin, ensure you have the following things installed and configured:**
+**Before running the app, ensure you have the following things installed and configured:**
 
 - **[Node.js](https://nodejs.org/)** : Download and install Nodejs.
 - **[Git](https://git-scm.com/downloads)** : Download and install Git.
