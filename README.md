@@ -29,8 +29,8 @@ for the frontend.
 
 ***1) Open your terminal and run the following command in the terminal to download and open the repository in Visual Studio Code.***
 ```
-git clone https://github.com/CrazzyPhoton/OptraEth_Mern.git
-cd OptraEth_Mern
+git clone https://github.com/CrazzyPhoton/OptraEth.git
+cd OptraEth
 code .
 ```
 
