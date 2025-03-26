@@ -43,7 +43,7 @@ npm install
 - Run the above command in VS Code terminal.
 - Once dependencies are installed a new `node_modules` folder would be created in the `frontend` folder.
 
-***4) Create a file named*** `.env` ***in the frontend folder and then create the following environment variables in the file.***
+***4) Create a file named*** `.env` ***in the*** `frontend` ***folder and then create the following environment variables in the file.***
 ```
 VITE_REACT_APP_BACKEND_BASEURL
 ```
@@ -67,7 +67,7 @@ npm install
 - Run the above command in VS Code terminal.
 - Once dependencies are installed a new `node_modules` folder would be created in the `backend` folder.
 
-***7) Create a file named*** `.env` ***in the backend folder and then create the following environment variable in the file.***
+***7) Create a file named*** `.env` ***in the*** `backend` ***folder and then create the following environment variable in the file.***
 ```
 MONGO_URI
 ```
