@@ -1,34 +1,23 @@
 export function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">OptraEth</a>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav me-auto">
+            <div className="container-fluid d-flex align-items-center justify-content-between">
+                <div className="d-flex align-items-center">
+                    <a className="navbar-brand" href="#">OptraEth</a>
+                    <ul className="navbar-nav d-flex flex-row ms-4 gap-3">
                         <li className="nav-item">
-                            <a className="nav-link mx-3" href="#home">Home</a>
+                            <a className="nav-link" href="#home">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mx-3" href="#about">About</a>
+                            <a className="nav-link" href="#about">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mx-3" href="#contact">Contact</a>
+                            <a className="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <appkit-button className="btn btn-sm"></appkit-button>
                 </div>
+                <appkit-button className="btn btn-sm"></appkit-button>
             </div>
         </nav>
-    )
+    );
 }
